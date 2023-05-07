@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-AU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validar</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+    /* Estilos para el cuerpo */
+body {
+  background-image: url('https://wallpapercave.com/wp/wp2430790.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+  
+  font-size: 36px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las etiquetas de los campos de entrada */
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(5, 5, 5);
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc400;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Estilos para el botón de enviar al pasar el cursor sobre él */
+input[type="submit"]:hover {
+  background-color: #e095c1;
+}
+
+</style>
+</head>
+<body>
+    <form action="registro.php" method="post">
+      <h1>SISTEMA DE REGISTRO</h1>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" placeholder="Usuario" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <a href="./index.html">¿Ya tienes cuenta?</a>
+        <input type="submit" value="REGISTRARSE">
+    </form>
+</body>
+</html>
+
